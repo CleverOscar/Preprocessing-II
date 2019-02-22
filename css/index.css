@@ -9,15 +9,34 @@
   text-decoration: none;
   color: black;
   width: 13%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   align-self: center;
 }
 .navbar .logo {
-  font-size: 30px;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .navbar .navbar {
+    margin: 0px auto;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .navbar a {
+    text-decoration: none;
+    color: black;
+    width: 13%;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .navbar .navbar .logo {
+    width: 50%;
+  }
 }
 .splitter {
   border-bottom: dashed gray 2px;
+  color: silver;
   width: 103%;
   margin-left: -10px;
 }
@@ -41,6 +60,7 @@
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  flex-direction: row-reverse;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -66,6 +86,37 @@
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 1%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 1%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
+  .home .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .home .content-pick .destination {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 * {
   box-sizing: border-box;
@@ -108,6 +159,22 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+.btn {
+  width: 100%;
+  background-color: #17A2B8;
+  height: 60px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
 }
 .footer {
   width: 100%;
